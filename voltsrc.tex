@@ -1,6 +1,6 @@
 %\documentclass[11pt,a4paper,twoside,openright,abstracton,liststotoc,bibtotoc,normalheadings]{chiscrreprt}
 \documentclass[12pt,a4paper,smallheadings]{scrartcl}
-\usepackage[top=15mm,left=15mm,right=15mm]{geometry}
+\usepackage[top=10mm,left=15mm,right=15mm]{geometry}
 %\usepackage{times,cite}
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf}
@@ -56,8 +56,8 @@
 \author{电子信息学院电子工程系}
 %\titlehead{}
 %\subject{}
-%$Revision: 1.2 $, $Date: 2004-06-29 08:13:23 $
-\date{\normalsize\tt Revision: 1.1, Date: 2004/06/28 07:34:47 UTC}
+%$Revision: 1.3 $, $Date: 2004-06-29 08:20:33 $
+\date{\normalsize\tt Revision: 1.2, Date: 2004/06/29 08:13:23 UTC}
 %\publishers{}
 \maketitle
 
@@ -102,6 +102,10 @@ S1 & 开关 & & & AC \unit{220}{\volt} 用 \\\hline
 另需~\unit{220}{\volt} \unit{1}{\ampere}~插头。本电路中~IC~内部具有过热
 过流保护功能，工作中最大功耗有~\unit{15}{\watt}，在小电压大电流输出时发
 热较大，可选择使用~\unit{15}{\watt}~散热器，也可用普通金属板代替。
+
+关于~R1~与~PR1~的选用~(R2~与~PR2~选用相同同)，R1~一般取
+~\unit{120}{\ohm}~到~\unit{240}{\ohm}，PR1~取~R1~的~9~倍左右~(可稍大一点
+点)，若购买器件时没有上表所示阻值，可按本原则从新计议。
 \begin{flushright}
 起草：蔡文锋\\
 Tel: 6716 2452\\
