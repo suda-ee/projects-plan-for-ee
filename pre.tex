@@ -1,0 +1,92 @@
+%\documentclass[11pt,a4paper,twoside,openright,abstracton,liststotoc,bibtotoc,normalheadings]{chiscrreprt}
+\documentclass[12pt,a4paper,smallheadings]{scrartcl}
+\usepackage[top=15mm,left=15mm,right=15mm]{geometry}
+%\usepackage{times,cite}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf}
+\usepackage{multirow}
+\usepackage[cdot,thinqspace,squaren]{SIunits}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[CJKbookmarks,pdfstartview=FitH]{hyperref}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{CJK}
+%\usepackage{CJKvert}
+\pagestyle{plain}
+%\pagecolor{black}
+%\color{white}
+
+\begin{document}
+\begin{CJK*}{GBK}{fs}
+\CJKtilde
+\CJKcaption{GB}
+\CJKindent
+
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+\renewcommand\listfigurename{图目录}
+\renewcommand\listtablename{表目录}
+\newcommand\preappendixname{附录}
+\renewcommand*\refname{参考文献}
+%\newcommand\prechaptername{第}
+%\newcommand\postchaptername{章}
+%\renewcommand\chapterformat{\prechaptername\CJKnumber{\value{chapter}}\postchaptername\quad}
+%\renewcommand\chaptermarkformat{\prechaptername\CJKnumber{\value{chapter}}\postchaptername\quad}
+\setkomafont{section}{\CJKfamily{kai}}
+\setkomafont{subsection}{\CJKfamily{kai}}
+\setkomafont{subsubsection}{\CJKfamily{kai}}
+%\renewcommand*{\raggedsection}{\centering}
+%\makeatletter
+%\makeatother
+%\extratitle{}
+%\uppertitleback{
+%}
+%\lowertitleback{江苏省苏州市干将东路~178~号~30~号信箱~~~~215021\\10 9 8 7 6 5 4 3 2 1}
+\title{文正~02~级课程设计题目}
+\author{电子信息学院电子工程系}
+%\titlehead{}
+%\subject{}
+%$Revision: 1.1 $, $Date: 2004-09-01 03:21:43 $
+\date{\normalsize\tt Revision: 1.5, Date: 2004/07/01 07:57:33 UTC}
+%\publishers{}
+\maketitle
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%\pagenumbering{arabic}
+%\setchapterpreamble[u]{%
+%\dictum[Anonymous]{Forecasting is the art of saying what is going to happen and then to explain why it didn t.}}
+\section{数字电压表}
+设计并制作一块数字电压表。要求掌握双积分~A/D~转换器的工作原理，掌握集成
+化双积分~A/D~转换器~ICL7135~和部分常用器件的正确使用方法。\\
+基本量程：$\unit{-2}{\volt}\sim\unit{+2}{\volt}$。
+
+\section{二位显示数字计数器}
+设计一个计数器电路，要求能实现十进制两位正、倒计数功能，可在~0--99~中预
+置初始值，并显示计数值。
+
+\section{可调直流正负电源}
+\begin{itemize}
+\item 设计并制作一台连续可调的正负直流稳压电源
+\item 主要技术指标与要求~(对正或负各部分而言)
+    \begin{itemize}
+    \item 输出直流电压~$V_{\rm O}=3\sim \unit{12}{\volt}$
+    \item 最大输出电流~$I_{\rm LM}=\unit{1}{\ampere}$
+    \item 输出纹波电压小于~\unit{5}{\milli\volt}，稳压系数~$S_{\rm
+    r}\leq 5\times 10^{-3}$，输出内阻小于~\unit{0.1}{\ohm}
+    \end{itemize}
+\end{itemize}
+\standardtilde
+\end{CJK*}
+\end{document}
