@@ -56,8 +56,8 @@
 \author{电子信息学院电子工程系}
 %\titlehead{}
 %\subject{}
-%$Revision: 1.1 $, $Date: 2004-06-28 07:34:47 $
-\date{\normalsize\tt UTC}
+%$Revision: 1.2 $, $Date: 2004-06-29 08:13:23 $
+\date{\normalsize\tt Revision: 1.1, Date: 2004/06/28 07:34:47 UTC}
 %\publishers{}
 \maketitle
 
@@ -78,7 +78,30 @@
     r}\leq 5\times 10^{-3}$，输出内阻小于~\unit{0.1}{\ohm}
     \end{itemize}
 \end{itemize}
-参考电路及所需器件见后页。
+\section{所需器件和参考电路}
+参考电路见附页。所需器件如下，可根据情况选用可替代器件。
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|}\hline
+编号 & 名称 & 型号 & 数量 & 说明 \\\hline
+D1--D8 & 整流桥堆 & & 2 & 耐压要够，可用~1N4007~二极管自搭~(8~只) \\\hline
+D9 D10 & 二极管 & 1N4007 & 2 & \\\hline
+T1 & 变压器 & \unit{32}{\watt} \unit{12}{\volt} & 1 & 4~抽头输出，每副线圈输出~\unit{12}{\volt} \\\hline
+C1 C4 & 电解电容 & \unit{25}{\volt} \unit{3300}{\micro\farad} & 2 & \\\hline
+C2 C5 & 电容 & \unit{20}{\volt} \unit{0.1}{\micro}{\farad} & 2 & \\\hline
+C3 C 6 & 电解电容 & \unit{20}{\volt} \unit{100}{\micro\farad} & 2 & \\\hline
+U1 U2 & 三端稳压~IC & LM317, LM337 & 2 & LM317, LM337~各一 \\\hline
+R1 R2 & 电阻 & \unit{120}{\ohm} & 2 & \unit{1/8}{\watt} \\\hline
+PR1 PR2 & 可调电阻 & \unit{1100}{\ohm} & 2 & \unit{1/8}{\watt} \\\hline
+F1 & 保险管 & \unit{0.5}{\ampere} & 1 & 带插座等配件 \\\hline
+S1 & 开关 & & & AC \unit{220}{\volt} 用 \\\hline
+ & 接线柱 & & 3 & 输出用 \\\hline
+ & 通用~PCB~板& & 1 & 大小? \\\hline
+ & 电压指示表 & & 2 & 指示用，可选 \\\hline
+\end{tabular}
+\end{table}
+另需~\unit{220}{\volt} \unit{1}{\ampere}~插头。本电路中~IC~内部具有过热
+过流保护功能，工作中最大功耗有~\unit{15}{\watt}，在小电压大电流输出时发
+热较大，可选择使用~\unit{15}{\watt}~散热器，也可用普通金属板代替。
 \begin{flushright}
 起草：蔡文锋\\
 Tel: 6716 2452\\
