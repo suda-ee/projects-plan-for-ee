@@ -1,0 +1,165 @@
+%\documentclass[11pt,a4paper,twoside,openright,abstracton,liststotoc,bibtotoc,normalheadings]{chiscrreprt}
+\documentclass[12pt,a4paper,smallheadings]{scrartcl}
+\usepackage[top=15mm,left=15mm,right=15mm]{geometry}
+%\usepackage{times,cite}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf}
+\usepackage{multirow}
+\usepackage[cdot,thinqspace,squaren]{SIunits}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[CJKbookmarks,pdfstartview=FitH]{hyperref}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{CJK}
+%\usepackage{CJKvert}
+\pagestyle{plain}
+%\pagecolor{black}
+%\color{white}
+
+\begin{document}
+\begin{CJK*}{GBK}{fs}
+\CJKtilde
+\CJKcaption{GB}
+\CJKindent
+
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+\renewcommand\listfigurename{图目录}
+\renewcommand\listtablename{表目录}
+\newcommand\preappendixname{附录}
+\renewcommand*\refname{参考文献}
+%\newcommand\prechaptername{第}
+%\newcommand\postchaptername{章}
+%\renewcommand\chapterformat{\prechaptername\CJKnumber{\value{chapter}}\postchaptername\quad}
+%\renewcommand\chaptermarkformat{\prechaptername\CJKnumber{\value{chapter}}\postchaptername\quad}
+\setkomafont{section}{\CJKfamily{kai}}
+\setkomafont{subsection}{\CJKfamily{kai}}
+\setkomafont{subsubsection}{\CJKfamily{kai}}
+%\renewcommand*{\raggedsection}{\centering}
+%\makeatletter
+%\makeatother
+%\extratitle{}
+%\uppertitleback{
+%}
+%\lowertitleback{江苏省苏州市干将东路~178~号~30~号信箱~~~~215021\\10 9 8 7 6 5 4 3 2 1}
+\title{文正~02~级课程设计计划~(草案)}
+\author{电子信息学院电子工程系}
+\titlehead{}
+\subject{}
+\date{$Revision: 1.1.1.1 $, $Date: 2004-06-27 10:29:31 $}
+\publishers{}
+\maketitle
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%\pagenumbering{arabic}
+%\setchapterpreamble[u]{%
+%\dictum[Anonymous]{Forecasting is the art of saying what is going to happen and then to explain why it didn t.}}
+2004--2005~学年第一学期课程设计历时~8~周~(第三周到第十周)~共~36~学时，与
+以往不同，本学期讲课程设计分布在两个多月内进行，而不是集中在一周完成，目
+的是使学生有充足的时间熟悉设计过程并作好准备，另外还可以充分调动学生的积
+极性，将学生课余时间的注意力吸引到充满乐趣的设计实践上来，在培养其创造能
+力之外还可以使之养成良好的习惯和工作学习风格。
+
+为了加强学生的动手能力的培养，进一步提高学生的社会竞争力，从本学期开始计
+划对通信/信息工程专业《课程设计》做改革尝试。鉴于大三学生的实际情况，学
+完了《模拟电路》和《数字电路》，课程设计的目的就是培养同学的电路设计、按
+装和调试的能力。特安排了数字电路和模拟电路的系统设计，命题与选题相结合，
+针对不同的学生提出不同的要求。题目按难度不同设计成三类，难度系数分别定为
+1, 0.85~和~0.75，初步设想以下三个题目：
+\begin{table}[H]
+\begin{tabular}{lll}
+    题目 & 知识点 & 难度系数 \\\hline
+    1. 数字电压表 & A/D~转换；数字显示 & 1 \\
+    2. 二位显示数字计数器 & 数字电路 & 0.85 \\
+    3. 可调直流正负电源 & 整流；三端可调稳压电路 & 0.75
+\end{tabular}
+\end{table}
+{\bf 基本要求：}
+\begin{enumerate}
+    \item 能运用所学知识，结合参考实现电路，并通过查阅手册和文献资料完成
+    方案设计；
+    \item 熟悉常用电子器件类型和特性，并能合理选用；
+    \item 初步使用~EDA~工具进行设计、仿真、验证等；
+    \item 按原理图对系统安装与调试，熟练使用电子仪器，调试通过；
+    \item 能够撰写课程设计总结报告。
+\end{enumerate}
+
+{\bf 以下是本学期的大概计划安排，如有其它变动将另行说明。}
+\begin{enumerate}
+    \item 动员与准备。时间：上学期末、本学期初。\\
+    主要任务有二：一是与实验室联系协调时间、场所、器件、设备等等问题；二
+    是针对学生做动员，初步安排在开学第一周，学生应在两周内选题，多数人应
+    以参考电路为准，但鼓励有余力的同学提出改进方案，个别优秀的同学可以提
+    出自己的方案，甚至独立确定题目。
+    
+    \item 基础讲解。时间：第~3~周。学时比重：$\sim 10\%$\\
+    课程设计是实践性教学环节，针对学生理论多而实践少的特点，先安排讲授有
+    关电子设计的基础内容，主要有：
+    \begin{itemize}
+        \item 电子电路设计的一般方法与步骤；
+        \item 电子电路安装技术；
+        \item 电子电路调试与抗干扰技术；
+        \item 模拟电路设计方法；
+        \item 数字电路设计方法；
+        \item 其它相关的知识与注意事项。
+    \end{itemize}
+    以上内容较多且是综合性的，与多门课程都有联系，受时间限制，除~4--5~个
+    学时的讲授外，应靠学生自己学习教材上的基础部分。
+
+    \item 设计与计算。时间：第~4--5~周。学时比重：$\sim 30\%$\\
+    学生根据所选课题任务、要求和条件进行总体方案设计，通过论证与选择，确
+    定总体方案。对方案中单元电路进行选择和设计计算，包括器件选用和电路参
+    数计算。最后画出总体电路图。学生应在第~4~周前确定所需仪器、器件等。
+    囿于时间与条件，故计划安排在此阶段对电路仿真~(使用~SPICE~等工具)，以
+    减少电路安装后调试的风险，推荐使用电路仿真软件~Multisim~(短时间内容
+    易上手)。\\
+    请实验室在此阶段~(辅导时间)~安排机房使用，并备有相应软件。非辅导时间
+    也能有部分上机时间最好。实验室还请在第~4~周根据各方案所需将相关设备、
+    器件准备好。
+
+    \item 安装与调试。时间：第~6--9~周。学时比重：$\sim 50\%$\\
+    预设计及仿真结果经指导教师审查通过后，学生向实验室领取所需元器件等资
+    料，并在实验板上组装焊接电路。此后运用测试仪表进行电路调试，排除电路
+    故障，调整元器件，修改电路，使之达到设计指标要求。\\
+    请实验室在第~6~周~(或之前学生方案确定之后)~交付相应仪器及元器件，在
+    辅导时间~(见课程表)~安排适当的实验场所，非辅导时间亦应有实验室以供学
+    生组装调试之用。
+
+    \item 撰写报告与答辩。时间：第~10~周。学时比重：$\sim 10\%$\\
+    学生应在此阶段按规定的格式编写设计说明书~(暨总结报告)。指导教师将对
+    学生设计的系统进行检查，并安排答辩。\\
+    同上一项一样，请实验室在辅导时间安排场所。
+\end{enumerate}
+
+{\bf 成绩评定}
+
+课程设计结束后，将根据以下几方面来评定成绩：
+\begin{enumerate}
+    \item 设计方案正确性与合理性；
+    \item 实验动手能力~(安装焊接工艺水平、调试分析解决问题的能力，以及创
+    新精神等)，教师可适当更改学生已完成电路让学生来调试来进行考察；
+    \item 总结报告；
+    \item 答辩情况~(课题的论述和回答问题的情况)；
+    \item 设计过程中的学习态度、工作作风和科学精神等。
+\end{enumerate}
+
+\begin{flushright}
+起草：蔡文锋\\
+Tel: 6716 2452\\
+Email: \verb+cai@free.com.cn+
+\end{flushright}
+\standardtilde
+\end{CJK*}
+\end{document}
